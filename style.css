@@ -3,8 +3,22 @@
 }
 
 .container {
-    max-width: 1150px;
+    max-width: 1200px;
     margin: auto;
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 0;
+}
+
+
+button {
+    padding: 8px 20px;
+    cursor: pointer;
 }
 
 header {
@@ -12,7 +26,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 16px 32px;
+        margin: 16px 40px;
 
         nav {
             display: flex;
@@ -24,11 +38,6 @@ header {
                 color: black;
             }
         }
-
-        button {
-
-            padding: 8px 20px;
-        }
     }
 
     #banner {
@@ -36,9 +45,9 @@ header {
         justify-content: center;
         align-items: center;
         background-image: url(Images/banner.png);
-        height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
+        height: 100vh;
 
         .text-banner {
             display: flex;
@@ -46,44 +55,92 @@ header {
             align-items: center;
             gap: 20px;
         }
-
-        button {
-            padding: 8px 20px;
-        }
     }
 }
 
 main {
     #advantages {
-        .container {
-            #text-advantages {
+        #card-advantages-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 40px 0;
+
+            .card-advantages {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 10px;
-                padding: 40px 0;
+                flex-wrap: wrap;
+                border: solid, black, 1px;
+                padding: 20px;
+                max-width: 300px;
+                box-sizing: border-box
             }
+        }
+    }
 
+    #products {
+        #card-products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px 0;
 
-            .card-container {
+            .card-products {
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
                 align-items: center;
+                text-align: center;
                 gap: 20px;
-                padding: 40px;
+                max-width: 300px;
 
-                .card-advantages {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    border: solid, black, 1px;
-                    padding: 20px;
+                img {
                     width: 300px;
-                    box-sizing: border-box
+                    height: 300px;
                 }
             }
         }
+    }
 
+    #services {
+        #card-services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px 0;
+
+            .card-services {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+                max-width: 300px;
+            }
+        }
+    }
+
+    #vouch {
+        #card-vouch-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 40px 0;
+
+            .card-vouch {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+                border: solid, black, 1px;
+                padding: 20px;
+                max-width: 300px;
+                box-sizing: border-box
+            }
+        }
     }
 }

@@ -2,6 +2,11 @@
     margin: 0;
 }
 
+body {
+    background-color: rgb(255, 245, 237);
+    color: rgb(20, 14, 8);
+}
+
 .logo {
     font-size: 24px;
     font-family: "Dancing Script", cursive;
@@ -18,13 +23,16 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 40px 0;
+    padding: 100px 0;
 }
 
 
 button {
     padding: 8px 20px;
     cursor: pointer;
+    background-color: rgb(197, 89, 0);
+    color: rgb(255, 245, 237);
+    border: none;
 }
 
 header {
@@ -42,6 +50,7 @@ header {
             a {
                 text-decoration: none;
                 color: black;
+                font-weight: bold;
             }
         }
     }
@@ -60,6 +69,8 @@ header {
             flex-direction: column;
             align-items: center;
             gap: 20px;
+            color: rgb(255, 245, 237);
+            font-weight: bold;
         }
     }
 }
@@ -71,7 +82,6 @@ main {
             justify-content: center;
             align-items: center;
             gap: 20px;
-            padding: 40px 0;
 
             .card-advantages {
                 display: flex;
@@ -157,6 +167,16 @@ footer {
         display: flex;
         justify-content: space-between;
 
+        #contact {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .fa-brands {
+                font-size: 20px;
+            }
+        }
+
         #navbar2 {
             display: flex;
             flex-direction: column;
@@ -165,6 +185,7 @@ footer {
             a {
                 text-decoration: none;
                 color: black;
+                font-weight: bold;
             }
         }
     }
